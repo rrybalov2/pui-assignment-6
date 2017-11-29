@@ -19,6 +19,7 @@ body {
 
 .p-persona {
     color: rgb(102, 102, 102);
+    font-family: 'Open Sans', sans-serif;
 }
 
 .img-center {
@@ -105,15 +106,18 @@ body {
     p {
         font-size: 2.5em;
         padding: 0px 100px 0px 0px;
+        font-family: 'Open Sans', sans-serif;
     }
 
     .card-text {
         font-size: 2em;
         padding: 0px 100px 0px 0px;
+        font-family: 'Open Sans', sans-serif;
     }
 
     .persona-text {
         font-size: 1.5em;
+        font-family: 'Open Sans', sans-serif;
     }
 }
 
@@ -122,19 +126,23 @@ body {
     p {
         font-size: 2em;
         padding: 0px 100px 0px 0px;
+        font-family: 'Open Sans', sans-serif;
     }
 
     h1 {
         font-size: 2.5em;
+        font-family: 'Open Sans', sans-serif;
         }
 
     .card-text {
         font-size: 1em;
         padding: 0px 100px 0px 0px;
+        font-family: 'Open Sans', sans-serif;
     }
 
     .persona-text {
         font-size: 1.5em;
+        font-family: 'Open Sans', sans-serif;
     }
 }
 
@@ -143,19 +151,23 @@ body {
     p {
     font-size: 1.25em;
     padding: 0px 100px 0px 0px;
+    font-family: 'Open Sans', sans-serif;
     }
 
     h1 {
     font-size: 3em;
+    font-family: 'Open Sans', sans-serif;
     }
 
     .card-text {
     font-size: 1.25em;
     padding: 0px 100px 0px 0px;
+    font-family: 'Open Sans', sans-serif;
     }
 
     .persona-text {
         font-size: 1em;
+        font-family: 'Open Sans', sans-serif;
     }
 }
 
