@@ -43,15 +43,19 @@
         </ul>
         <ul class="navbar-nav ml-auto">
           <li class="nav-item">
+            <!-- Link to stats -->
             <a class="nav-link" href="#stats">Statistics</a>
           </li>
           <li class="nav-item">
+            <!-- Link to research -->
             <a class="nav-link" href="#research">Research</a>
           </li>
           <li class="navbar-item">
+            <!-- Link to prototypes -->
             <a class="nav-link" href="#prototyping">Prototyping</a>
           </li>
           <li class="navbar-item">
+            <!-- Link to final design -->
             <a class="nav-link" href="#finaldesign">Final Design</a>
           </li>
         </ul>
@@ -60,20 +64,25 @@
     <br>
   </header>
 
-  <!-- Fluid container -->
+  <!-- Begining of the main body -->
+  <!-- Creating fluid container to hold main iphone photo & text-->
   <div class="container-fluid">
     <!-- Row with a 6 & 6 column setup -->
     <div class="row">
       <!-- Left side has phone photo inside flexbox container -->
+      <!-- Adding AOS JS library animations: fade up to the center with soft & slow easing -->
       <div class="col-sm-6 flex-container" data-aos="fade-up"
      data-aos-anchor-placement="top-center" data-aos-easing="linear"
-     data-aos-duration="1000"><a href="#" data-lity data-lity-target="https://youtu.be/RiPhm17AF3s"><img class="img-fluid img-center" src="./img/myGluPhone.jpg" width="300"></a>
+     data-aos-duration="1000">
+     <!-- Adding Lity JS Library info to make the YT video pop out in a shadow box -->
+     <a href="#" data-lity data-lity-target="https://youtu.be/RiPhm17AF3s"><img class="img-fluid img-center" src="./img/myGluPhone.jpg" width="300"></a>
       </div>
       <!-- Right side has text -->
       <div class="col-sm-6">
         <h1>Introducing myGlu</h1>
         <p>A simple dashboard for diabetics to see their status for activities in relation to their blood sugar level.</p>
         <!-- Adding myGlu logo -->
+        <!-- Same animation as phonescreen -->
         <div class="col-sm-4 flex-container" data-aos="zoom-in-up" data-aos-easing="linear"
      data-aos-duration="1000"><img class="img-fluid mx-auto" src="./img/myGlu_logoblock.png" width="200">
       </div>
@@ -84,8 +93,9 @@
   <div class="col-sm-12 flex-container"><img class="img-fluid img-center" src="./img/arrow_down.png" width="50">
   </div>
   <br>
-  <!-- Next text section w/ parallax scrolling -->
+  <!-- Next text section w/ parallax scrolling: beach runner image-->
   <div class="parallax"></div>
+  <!-- Problem Statement -->
   <div class="row">
     <div class="col-sm-3"></div>
     <div class="col-sm-6">
@@ -101,39 +111,46 @@
   <div style="padding-bottom: 80px;"></div>
   <div class="col-sm-12 flex-container"><h1 class="display-4 text-center">More Common Than You Think</h1>
   </div>
+  <!-- creating 2-4-4-2 column config -->
   <div class="row">
     <div class="col-sm-2"></div>
+    <!-- Stat image 1, animation coming in from left -->
     <div class="col-sm-4" style="padding-top: 30px; padding-bottom: 20px;" data-aos="fade-right"><img class="img-fluid img-center" src="./img/stat1.png" width="300"></div>
+    <!-- Stat image 2, animation coming in from right -->
     <div class="col-sm-4" style="padding-top: 30px; padding-bottom: 20px;" data-aos="fade-left"><img class="img-fluid img-center" src="./img/stat2.png" width="300"></div>
     <div class="col-sm-2"></div>
   </div>
   <div class="row">
     <div class="col-sm-2"></div>
+    <!-- Stat image 3, animation coming in from left -->
     <div class="col-sm-4" style="padding-top: 15px; padding-bottom: 20px;" data-aos="fade-right"><img class="img-fluid img-center" src="./img/stat3.png" width="300"></div>
+    <!-- Stat image 4, animation coming in from right -->
     <div class="col-sm-4" style="padding-top: 15px; padding-bottom: 20px;"><img class="img-fluid img-center" src="./img/stat4.png" width="300" data-aos="fade-left"></div>
     <div class="col-sm-2"></div>
   </div>
   </br>
   </br>
+  <!-- Next text section w/ parallax scrolling: food image-->
   <div class="parallax2"></div>
   <div class="row">
     <div class="col-sm-3"></div>
     <div class="col-sm-6">
       <br>
+      <!-- Value description -->
       <h1 class="display-4">myGlu's dashboard helps diabetics view this food intake and excersize activity on a single chart</h1>
       <p>You can easily see how your actions throughout the day impact your blood sugar levels. Using myGlu's recommendations, you can now make instant and informed decisions about how you control your day.</p>
     </div>
     <div class="col-sm-3"></div>
   </div>
   <div class="row">
+    <!-- creating 3-6-3 column config -->
     <div class="col-sm-3"></div>
+    <!-- Placing SVG image into column with AOS JS animation -->
     <div class="col-sm-6" data-aos="zoom-in">
       <div class="svg2" style="padding-top: 30px; padding-bottom: 50px;">
-        <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 300 300" style="" xml:space="preserve">
-        <style type="text/css">
-          .st0{fill:#7ED2F6;}
-          .st1{fill:none;stroke:#7ED2F6;stroke-width:6;stroke-miterlimit:10;}
-        </style>
+        <!-- creating SVG with Vivus JS library -->
+        <svg version="1.1" id="Layer_1" x="0px" y="0px" viewBox="0 0 300 300">
+        <!-- creating SVG path for logo name -->
         <path class="st0 NXjAxpND_0" d="M261.3,138.3c-0.1-0.5-0.3-0.8-0.6-1c-0.3-0.2-0.6,0.1-1.1,0.8c-1,1.3-2,2.9-3.2,4.6c-1.2,1.7-2.4,3.5-3.7,5.3
           c-1.3,1.8-2.6,3.6-3.9,5.3c-1.3,1.7-2.6,3.3-3.7,4.6c-1.2,1.4-2.2,2.5-3.2,3.3c-1,0.8-1.7,1.2-2.4,1.2c-0.7,0-0.9-0.6-0.6-1.9
           c0.4-1.3,1-3,1.8-4.9c0.7-1.9,1.5-3.9,2.3-6c0.8-2.1,1.6-4.2,2.4-6.4c0.8-2.1,1.5-4.1,2.2-5.9c0.6-1.8,1.2-3.4,1.6-4.7
@@ -199,32 +216,37 @@
           c0.1-1.3,1.3-2.9,3.5-4.8c2.2-1.9,5.1-4.1,8.4-6.7C106.1,189.4,104.1,192.6,102.1,195.1z"></path>
         <g>
           <g>
+            <!-- creating SVG path for logo container outline -->
             <path class="st1 NXjAxpND_1" d="M159.9,291.3l107.6-62.1c6.1-3.5,9.9-10.1,9.9-17.2V87.9c0-7.1-3.8-13.6-9.9-17.2L159.9,8.7
               c-6.1-3.5-13.7-3.5-19.8,0L32.5,70.7c-6.1,3.5-9.9,10.1-9.9,17.2v124.2c0,7.1,3.8,13.6,9.9,17.2l107.6,62.1
               C146.2,294.9,153.8,294.9,159.9,291.3z"></path>
           </g>
         </g>
-        <style>.NXjAxpND_0{stroke-dasharray:1618 1620;stroke-dashoffset:1619;animation:NXjAxpND_draw_0 3600ms ease-in-out 0ms infinite,NXjAxpND_fade 3600ms linear 0ms infinite;}.NXjAxpND_1{stroke-dasharray:870 872;stroke-dashoffset:871;animation:NXjAxpND_draw_1 3600ms ease-in-out 0ms infinite,NXjAxpND_fade 3600ms linear 0ms infinite;}@keyframes NXjAxpND_draw{100%{stroke-dashoffset:0;}}@keyframes NXjAxpND_fade{0%{stroke-opacity:1;}77.77777777777777%{stroke-opacity:1;}100%{stroke-opacity:0;}}@keyframes NXjAxpND_draw_0{22.22222222222222%{stroke-dashoffset: 1619}50%{ stroke-dashoffset: 0;}100%{ stroke-dashoffset: 0;}}@keyframes NXjAxpND_draw_1{22.22222222222222%{stroke-dashoffset: 871}50%{ stroke-dashoffset: 0;}100%{ stroke-dashoffset: 0;}}</style></svg>
+        </svg>
       </div>
     </div>
     <div class="col-sm-3"></div>
   </div>
   </div>
+  <!-- Research Section -->
   <a name="research"></a>
   <div style="padding-bottom: 80px;"></div>
-  <!-- Fluid container -->
+  <!-- Fluid container for Interviews-->
   <div class="container-fluid">
     <div class="col-sm-12 flex-container"><h1 class="display-4 text-center">Testing Assumptions with Interviews</h1>
     <br>
     </div>
   <div class="row">
+    <!-- Creating 2-4-4-2 col config for cards 1 & 2 -->
     <div class="col-sm-2"></div>
+    <!-- Animation to fade from left -->
     <div class="col-sm-4" style="padding-top: 30px; padding-bottom: 20px;" data-aos="fade-right">
         <!-- Card 1 -->
         <div class="container">
           <div class="card">
-            <!-- Actual Interviewee did not consent to public image user -->
+            <!-- Actual Interviewee did not consent to public image use -->
             <img class="card-img-top card-pad" src="./img/interview1.jpg" alt="Card image" style="width:100%">
+            <!-- Card text -->
             <div class="card-body">
               <h4 class="card-title">Val P.</h4>
               <p class="card-text">Pre-Diabetic</p>
@@ -233,12 +255,14 @@
             </div>
         </div>
       </div></div>
+    <!-- Animation to fade from right -->
     <div class="col-sm-4" style="padding-top: 30px; padding-bottom: 20px;" data-aos="fade-left">
-      <!-- Card 1 -->
+      <!-- Card 2 -->
         <div class="container">
           <div class="card">
-            <!-- Actual Interviewee did not consent to public image user -->
+            <!-- Actual Interviewee did not consent to public image use -->
             <img class="card-img-top card-pad" src="./img/interview2.jpg" alt="Card image" style="width:100%">
+            <!-- Card text -->
             <div class="card-body">
               <h4 class="card-title">Maeve B.</h4>
               <p class="card-text">Type-1 Diabetic</p>
@@ -251,14 +275,17 @@
     </div>
     <div class="col-sm-2"></div>
   </div>
-
   <div class="row">
+    <!-- Creating 2-4-4-2 col config for cards 3 & 4 -->
     <div class="col-sm-2"></div>
+    <!-- Animation to fade from left -->
     <div class="col-sm-4" style="padding-top: 30px; padding-bottom: 20px;" data-aos="fade-right">
-        <!-- Card 1 -->
+        <!-- Card 3 -->
         <div class="container">
           <div class="card">
+            <!-- Actual Interviewee did not consent to public image use -->
             <img class="card-img-top card-pad" src="./img/interview3.jpg" alt="Card image" style="width:100%">
+            <!-- Card text -->
             <div class="card-body">
               <h4 class="card-title">Dave A.</h4>
               <p class="card-text">Body Hacker</p>
@@ -268,11 +295,14 @@
             </div>
         </div>
       </div></div>
+      <!-- Animation to fade from right -->
     <div class="col-sm-4" style="padding-top: 30px; padding-bottom: 100px;" data-aos="fade-left">
-      <!-- Card 1 -->
+      <!-- Card 4 -->
         <div class="container">
           <div class="card">
+            <!-- Actual Interviewee did not consent to public image use -->
             <img class="card-img-top card-pad" src="./img/interview4.jpg" alt="Card image" style="width:100%">
+            <!-- Card text -->
             <div class="card-body">
               <h4 class="card-title">Lisa D.</h4>
               <p class="card-text">Gestational Diabetic</p>
@@ -284,37 +314,47 @@
     </div>
     <div class="col-sm-2"></div>
   </div>
-
+  <!-- Creating container for affinity mapping section -->
   <div class="container-fluid">
     <div class="col-sm-12 flex-container"><h1 class="display-4 text-center">Affinity Mapping</h1>
       <br>
     </div>
+    <!-- Inserting both images -->
     <div class="row">
+      <!-- Animation to slide in from bottom -->
       <div class="col-sm-6" data-aos="zoom-out-up" style="padding-top: 30px; padding-bottom: 50px;"><img class="img-fluid img-center" src="./img/affinity1.jpg" width="60%"></div>
+      <!-- Animation to slide in from bottom -->
       <div class="col-sm-6" data-aos="zoom-out-up" style="padding-top: 30px; padding-bottom: 50px;"><img class="img-fluid img-center" src="./img/affinity2.jpg" width="60%"></div>
     </div>
   </div>
-
+  <!-- Research Results section -->
   <div class="container-fluid">
   <div class="col-sm-12 flex-container"><h1 class="display-4 text-center">Research Results</h1>
   </div>
     <br>
-
+  <!-- Card text -->
+  <!-- Creating 2-4-4-2 col config for images 1 & 2 -->
   <div class="row">
     <div class="col-sm-2"></div>
+    <!-- Animation to fade from left -->
     <div class="col-sm-4" style="padding-top: 30px; padding-bottom: 20px;" data-aos="fade-right"><img class="img-fluid img-center" src="./img/intstat1.png" width="300"></div>
+    <!-- Animation to fade from right -->
     <div class="col-sm-4" style="padding-top: 30px; padding-bottom: 20px;" data-aos="fade-left"><img class="img-fluid img-center" src="./img/intstat2.png" width="300"></div>
     <div class="col-sm-2"></div>
   </div>
+  <!-- Creating 2-4-4-2 col config for images 3 & 4 -->
   <div class="row">
     <div class="col-sm-2"></div>
+    <!-- Animation to fade from left -->
     <div class="col-sm-4" style="padding-top: 15px; padding-bottom: 10px;" data-aos="fade-right"><img class="img-fluid img-center" src="./img/intstat3.png" width="300"></div>
+    <!-- Animation to fade from right -->
     <div class="col-sm-4" style="padding-top: 15px; padding-bottom: 10px;"><img class="img-fluid img-center" src="./img/intstat4.png" width="300" data-aos="fade-left"></div>
     <div class="col-sm-2"></div>
   </div>
   </br>
   </br>
   <div class="container-fluid">
+    <!-- Animation to ease in slowly from the top -->
     <div class="row" data-aos="fade-down"
        data-aos-easing="linear"
        data-aos-duration="1000" style="padding-bottom: 30px;">
@@ -326,17 +366,22 @@
       </div>
     </div>
   </div>
+  <!-- Next text section w/ parallax scrolling: diabetes monitor -->
   <div class="parallax3"></div>
+  <!-- Personas section -->
   <div class="container-fluid">
     <div class="col-sm-12 flex-container"><h1 class="display-4 text-center" style="padding-top: 50px;">Personas</h1>
     <br>
     </div>
+    <!-- Creating 4-8 col config for images image & text -->
     <div class="row" style="padding-top: 10px;">
         <!-- Left side has phone photo inside flexbox container -->
+        <!-- Animation fade from left and land center to align -->
         <div class="col-sm-4 flex-container" data-aos="fade-right"
        data-aos-anchor-placement="top-center"><img class="img-fluid img-center" src="./img/persona1.jpg">
         </div>
-        <!-- Right side has text -->
+        <!-- Right side has text inside flexbox containers -->
+        <!-- Animation fade from right and land center to align -->
         <div class="col-sm-8" style="padding-left: 50px; padding-top: 10px;" data-aos="fade-left" data-aos-anchor-placement="top-center">
           <h2>The Data-Obsessed Type-1 Diabetic</h2>
           <h4 class="p-persona">“I’m a strong independent woman and I don’t need no diabetes tying me down”</h4>
@@ -364,10 +409,13 @@
       </div>
     </div>
     <div class="row" style="padding-top: 50px;">
+      <!-- Left side has phone photo inside flexbox container -->
+      <!-- Animation fade from left and land center to align -->
       <div class="col-sm-4 flex-container" data-aos="fade-right"
        data-aos-anchor-placement="top-center" width: 300px;><img class="img-fluid img-center" src="./img/persona2.png">
         </div>
-        <!-- Right side has text -->
+        <!-- Right side has text inside flexbox containers -->
+        <!-- Animation fade from right and land center to align -->
         <div class="col-sm-8" style="padding-left: 50px; padding-top: 10px;" data-aos="fade-left" data-aos-anchor-placement="top-center">
           <h2>Newly Diabetic and Confused</h2>
           <h4 class="p-persona">“My doctor told me to keep a close eye on my glucose levels, I think I’m ok but my wife is always worried”</h4>
@@ -395,7 +443,7 @@
       </div>
     </div>
   </div>
-
+  <!-- Prototyping section -->
   <a name="prototyping"></a>
   <div style="padding-bottom: 80px;"></div>
   <div class="container-fluid">
@@ -405,6 +453,7 @@
     <div class="col-sm-12 flex-container"><h1 class="display-5 text-center" style="padding-top: 10px;">Ideation</h1>
     </div>
     <br>
+    <!-- Ideation image - animation zooms onto itself -->
     <div class="row">
       <div class="col-sm-3"></div>
       <div class="col-sm-6 flex-container" data-aos="zoom-in"><img class="img-fluid img-center" src="./img/ideation.jpg"></div>
@@ -413,8 +462,10 @@
     <br>
     </div>
   </div>
+  <!-- Paper Prototyping section -->
   <div class="container-fluid">
     <div class="col-sm-12 flex-container"><h1 class="display-5 text-center" style="padding-top: 30px;">Paper Prototyping</h1></div>
+    <!-- 3-2-2-3 col layout, image 1 comes from left, image 2 from top, image 3 from the right -->
     <div class="row">
       <div class="col-sm-3" style="padding-top: 10px;"></div>
       <div class="col-sm-2 img-center" style="padding-top: 10px; max-width: 300px;" data-aos="zoom-in-right"><img class="img-fluid img-center" src="./img/pp1.jpg"></div>
@@ -422,6 +473,7 @@
       <div class="col-sm-2 img-center" style="padding-top: 10px; max-width: 300px;" data-aos="zoom-in-left"><img class="img-fluid img-center" src="./img/pp3.jpg"></div>
       <div class="col-sm-3" style="padding-top: 10px;"></div>
     </div>
+    <!-- 3-2-2-3 col layout, image 4 comes from left, image 5 from bottom, image 6 from the right -->
     <div class="row">
       <div class="col-sm-3" style="padding-top: 10px;"></div>
       <div class="col-sm-2 img-center" style="padding-top: 10px; max-width: 300px;" data-aos="zoom-in-right"><img class="img-fluid img-center" src="./img/pp4.jpg"></div>
@@ -431,8 +483,10 @@
     </div>
   </div>
   <br>
+  <!-- Medium Fidelity Prototyping section -->
   <div class="container-fluid">
-    <div class="col-sm-12 flex-container"><h1 class="display-5 text-center" style="padding-top: 30px;">Low-Fi Prototyping</h1></div>
+    <div class="col-sm-12 flex-container"><h1 class="display-5 text-center" style="padding-top: 30px;">Medium-Fi Prototyping</h1></div>
+    <!-- 3-2-2-3 col layout, image 1 comes from left, image 2 from top, image 3 from the right -->
     <div class="row">
       <div class="col-sm-3" style="padding-top: 10px;"></div>
       <div class="col-sm-2 img-center" style="padding-top: 10px; max-width: 300px;" data-aos="zoom-in-right"><img class="img-fluid img-center" src="./img/lp1.jpg"></div>
@@ -440,7 +494,9 @@
       <div class="col-sm-2 img-center" style="padding-top: 10px; max-width: 300px;" data-aos="zoom-in-left"><img class="img-fluid img-center" src="./img/lp3.jpg"></div>
       <div class="col-sm-3" style="padding-top: 10px;"></div>
     </div>
+    <!-- Final Design nav link goes here so you can see content under nav bar -->
     <a name="finaldesign"></a>
+    <!-- 3-2-2-3 col layout, image 4 comes from left, image 5 from bottom, image 6 from the right -->
     <div class="row">
       <div class="col-sm-3" style="padding-top: 10px;"></div>
       <div class="col-sm-2 img-center" style="padding-top: 10px; max-width: 300px;" data-aos="zoom-in-right"><img class="img-fluid img-center" src="./img/lp4.jpg"></div>
@@ -451,7 +507,9 @@
   </div>
   <br>
   <div class="container-fluid">
+    <!-- Final Design section -->
     <div class="col-sm-12 flex-container"><h1 class="display-5 text-center" style="padding-top: 30px;">Final Visual Design</h1></div>
+    <!-- 3-2-2-3 col layout, image 1 comes from left, image 2 from top, image 3 from the right -->
     <div class="row">
       <div class="col-sm-3" style="padding-top: 10px;"></div>
       <div class="col-sm-2 img-center" style="padding-top: 10px; max-width: 300px;" data-aos="zoom-in-right"><img class="img-fluid img-center" src="./img/hp1.jpg"></div>
@@ -459,6 +517,7 @@
       <div class="col-sm-2 img-center" style="padding-top: 10px; max-width: 300px;" data-aos="zoom-in-left"><img class="img-fluid img-center" src="./img/hp3.jpg"></div>
       <div class="col-sm-3" style="padding-top: 10px;"></div>
     </div>
+    <!-- 3-2-2-3 col layout, image 4 comes from left, image 5 from bottom, image 6 from the right -->
     <div class="row">
       <div class="col-sm-3" style="padding-top: 10px;"></div>
       <div class="col-sm-2 img-center" style="padding-top: 10px; max-width: 300px;" data-aos="zoom-in-right"><img class="img-fluid img-center" src="./img/hp4.jpg"></div>
@@ -466,9 +525,11 @@
       <div class="col-sm-2 img-center" style="padding-top: 10px; max-width: 300px;" data-aos="zoom-in-left"><img class="img-fluid img-center" src="./img/hp6.jpg"></div>
       <div class="col-sm-3" style="padding-top: 10px;"></div>
     </div>
+    <!-- Screen map section -->
     <div class="col-sm-12 flex-container"><h1 class="display-5 text-center" style="padding-top: 10px;">Screen Map</h1>
     </div>
     <br>
+    <!-- 3-6-3 col layout, image in on itself -->
     <div class="row">
       <div class="col-sm-3"></div>
       <div class="col-sm-6 flex-container" data-aos="zoom-in"><img class="img-fluid img-center" src="./img/screenmap.png"></div>
@@ -478,6 +539,7 @@
   <br>
   <br>
   <div class="container-fluid">
+    <!-- Arrow and text to go back to the top of the page -->
     <a style="color: black" href="#">
     <div class="row">
       <div class="col-sm-12 flex-container"><img class="img-fluid img-center" src="./img/arrow_up.png" width="50"></div>
@@ -489,7 +551,7 @@
   </div>
   </div>
   </div>
-
+  <!-- Footer with SoMe icons -->
   <div class="footer2">
     <h5>Follow My work!</h5>
     <a target="_blank" href="https://www.facebook.com/troika"><img src="./img/facebookicon.png" width="20"></a>

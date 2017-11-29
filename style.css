@@ -11,28 +11,34 @@ header {
     background-repeat: no-repeat;
 }
 
+/* Main body - not related to screens */
 body {
     margin: 80px 0px 0px 0px;
     background-color: #ffffff;
     font-family: 'Open Sans', serif;
+    width: 100%;
 }
 
+/* P style for personas grid */
 .p-persona {
     color: rgb(102, 102, 102);
     font-family: 'Open Sans', sans-serif;
 }
 
+/* Image centering class */
 .img-center {
     display: block;
     margin: 0 auto;
 }
 
+/* layout for logo svg */
 .svg2 {
     max-width: 600px;
     display: block;
     margin: 0 auto;
 }
 
+/* Parallax image 1 */
 .parallax {
     /*image source: https://media.self.com/photos/5848402aa3b6a15c1b7b0cdf/master/pass/running.jpg*/
     background-image: url("./img/jogger.jpg");
@@ -43,6 +49,7 @@ body {
     background-size: cover;
 }
 
+/* Parallax image 2 */
 .parallax2 {
     /*image source: http://www.alpeake.com/wp-content/uploads/2016/07/fruitsandvegetables_2.jpg*/
     background-image: url("./img/veg.jpg");
@@ -53,6 +60,7 @@ body {
     background-size: cover;
     }
 
+/* Parallax image 3 */
 .parallax3 {
     /*image source: https://www.dietdoctor.com/wp-content/uploads/2013/11/DiabetesPage.jpg*/
     background-image: url("./img/fingerpoking.jpg");
@@ -63,33 +71,39 @@ body {
     background-size: cover;
     }
 
+/* Flexbox main */
 .flex-container {
   display: flex;
   flex-direction: column;
   align-items: stretch;
 }
 
+/* Flexbox for divs inside main flexbox */
 .flex-container>div {
     width: 600px;
     margin: 20px 100px 0px 0px;
     text-align: left;
 }
 
+/* Flexbox main for persona grid */
 .flex-container-persona {
   display: flex;
   flex-wrap: wrap;
 }
 
+/* Flexbox inside main flexbox for persona grid */
 .flex-container-persona>div {
   margin: 10px;
   text-align: left;
   line-height: 15px;
 }
 
+/* Padding for cards */
 .card-pad {
     margin: 20px 20px 0px 0px;
 }
 
+/* Footer styling */
 .footer2 {
     text-align: center;
     font-family: 'Open Sans', sans-serif;
@@ -101,6 +115,54 @@ body {
     padding: 1rem;
 }
 
+/* Begin SVG styling */
+.st0 {
+    fill:#7ED2F6;
+}
+
+.st1 {
+    fill:none;
+    stroke:#7ED2F6;
+    stroke-width:6;
+    stroke-miterlimit:10;
+}
+
+.NXjAxpND_0 {
+    stroke-dasharray:1618 1620;
+    stroke-dashoffset:1619;
+    animation:NXjAxpND_draw_0 3600ms ease-in-out 0ms infinite, NXjAxpND_fade 3600ms linear 0ms infinite;
+}
+
+.NXjAxpND_1 {
+    stroke-dasharray:870 872;
+    stroke-dashoffset:871;
+    animation:NXjAxpND_draw_1 3600ms ease-in-out 0ms infinite, NXjAxpND_fade 3600ms linear 0ms infinite;
+}
+
+@keyframes NXjAxpND_draw {
+    100% {stroke-dashoffset:0;}
+}
+
+@keyframes NXjAxpND_fade {
+    0% {stroke-opacity:1;}
+    77.77777777777777% {stroke-opacity:1;}
+    100% {stroke-opacity:0;}
+}
+
+@keyframes NXjAxpND_draw_0 {
+    22.22222222222222% {stroke-dashoffset: 1619}
+    50% { stroke-dashoffset: 0;}
+    100% { stroke-dashoffset: 0;}
+}
+
+@keyframes NXjAxpND_draw_1 {
+    22.22222222222222% {stroke-dashoffset: 871}
+    50% { stroke-dashoffset: 0;}
+    100% { stroke-dashoffset: 0;}
+}
+/* End SVG styling */
+
+/* Large screens viewport */
 @media screen and (max-width: 2000px) {
 
     p {
@@ -121,7 +183,7 @@ body {
     }
 }
 
-
+/* Medium screens viewport */
 @media screen and (max-width: 1000px) {
     p {
         font-size: 2em;
@@ -146,8 +208,8 @@ body {
     }
 }
 
-
-@media screen and (max-width: 500px) {
+/* Small screens viewport */
+@media screen and (max-width: 450px) {
     p {
     font-size: 1.25em;
     padding: 0px 100px 0px 0px;
